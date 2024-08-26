@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript JS</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="JS/exemplo.js"></script>
+  </head>
+  <body>
+    <!--Topo da página-->
+    <div class="container-fluid bg1">
+      <h1>Logo</h1>
+    </div>
+
+    <!--Conteúdo da página-->
+    <div class="container bg2">
+      <!--Primeira linha do conteúdo -->
+      <div class="row">
+        <div class="col">
+          <h1>Calculadora Simples</h1>
+          <label for="valor1">Valor 1:</label>
+          <input type="number" id="valor1" step="any" />
+          <br /><br />
+          <label for="valor2">Valor 2:</label>
+          <input type="number" id="valor2" step="any" />
+          <br /><br />
+          <button
+            onclick="somar(document.getElementById('valor1').value, document.getElementById('valor2').value)"
+          >
+            Somar
+          </button>
+          <button
+            onclick="subtrair(document.getElementById('valor1').value, document.getElementById('valor2').value)"
+          >
+            Subtrair
+          </button>
+          <button
+            onclick="multiplicar(document.getElementById('valor1').value, document.getElementById('valor2').value)"
+          >
+            Multiplicar
+          </button>
+          <button
+            onclick="dividir(document.getElementById('valor1').value, document.getElementById('valor2').value)"
+          >
+            Dividir
+          </button>
+          <button onclick="calculadora()">Mostrar Resultado</button>
+          <br /><br />
+          <label for="resultado">Resultado:</label>
+          <input type="text" id="resultado" readonly />
+        </form>
+      
+        </div>
+      
+<form>
+        <div class="col">
+          <h1>Calculadora de Média</h1>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" />
+          <br /><br />
+          <label for="nota1">1ª Nota:</label>
+          <input type="number" id="nota1" step="any" />
+          <br /><br />
+          <label for="nota2">2ª Nota:</label>
+          <input type="number" id="nota2" step="any" />
+          <br /><br />
+          <label for="nota3">3ª Nota:</label>
+          <input type="number" id="nota3" step="any" />
+          <br /><br />
+          <label for="nota4">4ª Nota:</label>
+          <input type="number" id="nota4" step="any" />
+          <br /><br />
+          <button
+            onclick="calcularMedia(document.getElementById('nome').value, document.getElementById('nota1').value, document.getElementById('nota2').value, document.getElementById('nota3').value, document.getElementById('nota4').value)"
+          >
+            Calcular Média
+          </button>
+          <br /><br />
+          <div id="resultadoMedia"></div>
+        </div>
+      </form>
+      </div>
+
+      <!--Segunda linha do conteúdo-->
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
+
+    <!--Rodapé da página-->
+    <div class="container-fluid bg3">
+      <div class="row">
+        <div class="col">
+          <img src="/IMG/th (1).jfif">
+        <style>
+          img:hover{
+            width: 80%;
+            height: 80%;
+
+          }
+        </style></img>
+        </div>
+        <div class="col">
+          <img src="/IMG/th (1).jfif">
+        </div>
+        <div class="col">
+          <p>Criado por: <a href="#">EVE Design for Web</a></p>
+          <p>Todos os Direitos Reservados © 2024.</p>
+        </div>
+      </div>
+    </div>
+<form>
+    <div
+      id="container-fluid"
+      style="background-color: mediumaquamarine; text-align: center"
+    >
+      <label for="alt">Digite a altura:</label>
+      <input type="number" id="alt" placeholder="11 M" step="any" />
+      <br /><br />
+      <label for="lar">Largura:</label>
+      <input type="number" id="lar" step="any" />
+      <br /><br />
+      <label for="fundi">Profundidade:</label>
+      <input type="number" id="fundi" step="any" />
+      <br /><br />
+      <input type="reset" value="limpar"> </input>
+      <button onclick="calcularVol()">Calcular Volume</button>
+      <br /><br />
+      <label for="Vol">Volume:</label>
+      <input type="number" id="Vol" step="any" readonly />
+    </div>
+    </form>
+    
+    <div class="row">
+      <div class="col">
+        <h3>Par ou ímpar</h3>
+        <form>
+        <fieldset>
+          <label for="num">Digite o N°:</label>
+          <input type="number" id="num" />
+          <br />
+          <input
+            type="button"
+            value="Verificar"
+            onclick="jogar(document.getElementById('num').value)"
+          />
+          <input type="reset" value="Limpar" />
+          <br />
+          <label for="parimpar">Resultado:</label>
+          <input type="text" id="parimpar" readonly />
+        </form>      
+       
+      
+      </div>
+  
+<form>      <div class="col">
+        <h1>Dia da Semana</h1>
+        <input
+          type="number"
+          id="dia"
+          placeholder="Digite o dia da semana (1-7)"
+        />
+        <button onclick="exibirDia(document.getElementById('dia').value)">
+          Exibir Dia
+        </button>
+      </div>
+    </form> 
+
+      <div class="col">
+        <h3>Sistema de login</h3>
+        <form>
+        <fieldset>
+          <label for="user">Usuário:</label>
+          <input type="text" id="user" />
+          <br />
+          <label for="pass">Senha:</label>
+          <input type="password" id="pass" />
+          <br />
+          <input
+            type="button"
+            value="LOGAR"
+            onclick="entrarsistema(document.getElementById('user').value, document.getElementById('pass').value)"
+          />
+          <input type="reset" value="Limpar" />
+        </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

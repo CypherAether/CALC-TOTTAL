@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/CSS/estilo.css" />
+    <script src="JS/js.js"></script>
+    <title>Desafio</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: mediumaquamarine;
+      }
+      h1 {
+        align-items: center;
+        text-align: center;
+        text-decoration-color: pink;
+        font-size: 10px;
+        font-style: inherit;
+      }
+    </style>
+    <div class="col"></div>
+    <div class="row">
+      <form>
+        <label for="salario">Salario em real$</label>
+        <input type="number" id="salario" />
+        <button onclick="calcularSalario(salario.value)"></button>
+        <input type="reset" value="Limpar" />
+        <br /><br />
+        <label>VT6%</label>
+        <input type="text" id="vt" readonly /><br />
+        <label for="">VR 3,5%</label>
+        <input type="text" id="vr" readonly /><br />
+        <label>INSS</label>
+        <input type="text" id="INSS" readonly /><br />
+        <label>IRRF</label>
+        <input type="text" id="irff" readonly /><br /><br />
+        <label>total Do desconto</label>
+        <input type="text" id="descall" readonly /><br /><br />
+        <label for="">Salario liquido</label>
+        <input type="text" id="liquido" readonly
+      </form>
+    </div>
+
+    <h1><a href="index.html">clique aqui</a></h1>
+  </body>
+</html>
